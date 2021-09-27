@@ -1,0 +1,21 @@
+name: Deploy Application
+
+
+on:
+  push:
+
+    branches:
+      - main
+
+  jobs:
+    crate deploment artifacts
+
+  runs-on : ubuntu-latest
+  steps:
+
+    - users: actions/checkout@v2
+
+    - name: Complies Css and javascript
+        run :
+          npm install
+          npm prod
