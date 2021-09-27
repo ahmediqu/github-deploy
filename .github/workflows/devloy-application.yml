@@ -7,15 +7,19 @@ on:
     branches:
       - main
 
-  jobs:
-    crate deploment artifacts
+jobs:
+    crate-deploment-artifacts:
 
-  runs-on : ubuntu-latest
-  steps:
+      name: Create developmet artifacts
 
-    - users: actions/checkout@v2
+      runs-on : ubuntu-latest
 
-    - name: Complies Css and javascript
-        run:
-          npm install
-          npm run prod
+      steps:
+
+        - users: actions/checkout@v2
+
+        - name: Complies Css and javascript
+
+          run:
+              npm install
+              npm run prod
