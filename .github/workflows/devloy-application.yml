@@ -16,7 +16,7 @@ jobs:
 
       steps:
 
-        - users: actions/checkout@v2
+        - uses: actions/checkout@v2
 
         - name: Complies Css and javascript
 
