@@ -16,6 +16,6 @@ on:
     - users: actions/checkout@v2
 
     - name: Complies Css and javascript
-        run :
+        run:
           npm install
-          npm prod
+          npm run prod
