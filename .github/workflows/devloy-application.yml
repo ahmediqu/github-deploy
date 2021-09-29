@@ -26,7 +26,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          server: rs004
+          server: https://halalagency.xyz/
           username: ${{ secrets.LARAVEL_SITE_USER}}
           password: ${{ secrets.LARAVEL_SITE_PASS}}
           server-dir: /public_html/githubdeploy/
